@@ -33,7 +33,7 @@ namespace ExperimentWithControls
         private void numberTextBoxPreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = !int.TryParse(e.Text, out int result);
-        }
-        //add some comment        
+        }            
     }
+    //add comment from develop
 }
