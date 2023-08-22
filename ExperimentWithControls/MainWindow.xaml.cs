@@ -33,7 +33,17 @@ namespace ExperimentWithControls
         private void numberTextBoxPreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = !int.TryParse(e.Text, out int result);
-        }            
+        }
+
+        private void smallSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            number.Text =smallSlider.Value.ToString("0");
+        }
+
+        private void bigSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            number.Text = bigSlider.Value.ToString("000-000-0000");
+        }
     }
     //add comment from develop
     //add comment from master
